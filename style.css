@@ -3,5 +3,36 @@ body {
   color: blueviolet;
   font-weight: bold;
   font-size: large;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+}
+
+body div {
+  padding: 1em 1em 1em 1em;
+  text-align: center;
+  justify-items: center;
+  border-radius: 1em;
+  background-color: blueviolet;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+body div:hover {
+  background-color: rgba(137, 43, 226, 0.377);
 }
 /*# sourceMappingURL=style.css.map */
