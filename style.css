@@ -3,9 +3,7 @@ body {
   color: blueviolet;
   font-weight: bold;
   font-size: large;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: flexbox;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -19,20 +17,21 @@ body div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 1em;
   padding: 1em 1em 1em 1em;
   text-align: center;
   justify-items: center;
   border-radius: 1em;
-  background-color: blueviolet;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(blueviolet), to(purple));
+  background-image: linear-gradient(blueviolet, purple);
   color: white;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 6em;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -46,6 +45,7 @@ body div a {
 }
 
 body div:hover {
-  background-color: rgba(137, 43, 226, 0.377);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(137, 43, 226, 0.342)), to(rgba(128, 0, 128, 0.377)));
+  background-image: linear-gradient(rgba(137, 43, 226, 0.342), rgba(128, 0, 128, 0.377));
 }
 /*# sourceMappingURL=style.css.map */
