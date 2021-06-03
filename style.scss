@@ -3,14 +3,12 @@ body {
   color: blueviolet;
   font-weight: bold;
   font-size: large;
-  display: flexbox;
+  display: grid;
   justify-content: center;
   align-items: center;
   height: 90vh;
   div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     margin: 1em;
     padding: 1em 1em 1em 1em;
     text-align: center;
