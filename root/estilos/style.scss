@@ -75,7 +75,7 @@ nav {
   position: relative;
   display: inline-flex;
   width: 200px;
-  height: 300px;
+  height: 330px;
   background-color: cyan;
   border-radius: 1rem;
   margin: 4px;
@@ -95,7 +95,7 @@ nav {
     transform: skewY(390deg);
   }
   &::after {
-    content: "Hello";
+    content: "";
     position: relative;
     top: 85%;
     right: 80%;
@@ -112,7 +112,7 @@ nav {
     justify-content: center;
     align-items: center;
     padding-top: 0;
-    z-index: 2;
+    z-index: 1;
     img {
       max-width: 100%;
       transition: 0.5s;
@@ -123,6 +123,49 @@ nav {
       img {
         max-width: 70%;
       }
+    }
+  }
+  .contentbox {
+    position: relative;
+    top: 100px;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 25px;
+      color: black;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+    .price {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 25px;
+      color: black;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+    .comprar{
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border: black 2px solid;
+      border-radius: 2rem;
+      padding: 2px;
+      margin: 10px;
+      font-size: 1em;
+      &:hover {
+      color: darkcyan;
+      font-size: 1.5em;
+      transition: .5s;
+    }
     }
   }
 }
