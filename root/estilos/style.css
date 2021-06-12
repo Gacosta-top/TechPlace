@@ -4,6 +4,22 @@ body {
   height: 90vh;
 }
 
+.catbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -35,16 +51,13 @@ nav {
 }
 
 nav ul {
-  margin: 0;
+  margin: 1;
   padding: 0;
   list-style: none;
 }
 
 nav li {
   display: inline-block;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  padding: 0.3rem;
 }
 
 nav li button {
@@ -58,13 +71,92 @@ nav li button {
   border-radius: 2rem;
 }
 
-nav li button:hover {
-  color: darkcyan;
-}
-
 nav a {
   color: black;
   text-decoration: none;
-  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: darkcyan;
+}
+
+.flex {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display: flexbox;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 200px;
+  height: 300px;
+  background-color: cyan;
+  border-radius: 1rem;
+  margin: 4px;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  width: 100%;
+  height: 100%;
+  background-color: darkcyan;
+  -webkit-transform: skewY(345deg);
+          transform: skewY(345deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card:hover::before {
+  top: -60%;
+  -webkit-transform: skewY(390deg);
+          transform: skewY(390deg);
+}
+
+.card::after {
+  content: "Hello";
+  position: relative;
+  top: 85%;
+  right: 80%;
+  bottom: 0;
+  left: 5%;
+  font-weight: bold;
+  font-size: 2em;
+  color: black;
+}
+
+.card .imgbox {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 0;
+  z-index: 2;
+}
+
+.card .imgbox img {
+  max-width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card:hover .imgbox img {
+  max-width: 70%;
 }
 /*# sourceMappingURL=style.css.map */
