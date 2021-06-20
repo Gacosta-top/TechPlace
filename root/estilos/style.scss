@@ -14,12 +14,7 @@ body {
     header {
       background-color: cyan;
     }
-    /*
-  header::after {
-    content: "";
-    display: table;
-    clear: both;
-  }*/
+
     button {
       margin: 0.5rem;
       float: left;
@@ -221,4 +216,44 @@ nav {
       }
     }
   }
+}
+
+.cont {
+  background-image: linear-gradient(rgb(37, 185, 185), cyan);
+  margin: 0.5em 0em 0em 0em;
+  padding: 0.5em;
+  form {
+    font-weight: bold;
+    div {
+      margin: 0.2rem;
+    }
+  }
+  fieldset {
+    background-color: #fff;
+  }
+}
+
+.abt {
+  background-color: cyan;
+  width: 35%;
+  height: 10em;
+  margin: 0.5em 0;
+  p {
+    padding: 4rem .3rem;
+    color: black;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  &:hover {
+    p {
+      color: black;
+    }
+    width: 100%;
+    transition: 2s;
+  }
+}
+strong {
+  font-size: 2rem;
+  color: white;
+  float: right;
 }

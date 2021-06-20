@@ -8,12 +8,6 @@ body {
 @media screen and (min-width: 10px) and (max-width: 760px) {
   body {
     background-color: black;
-    /*
-  header::after {
-    content: "";
-    display: table;
-    clear: both;
-  }*/
   }
   body .container {
     width: 100%;
@@ -262,5 +256,54 @@ nav a:hover {
   font-size: 1.5em;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.cont {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#25b9b9), to(cyan));
+  background-image: linear-gradient(#25b9b9, cyan);
+  margin: 0.5em 0em 0em 0em;
+  padding: 0.5em;
+}
+
+.cont form {
+  font-weight: bold;
+}
+
+.cont form div {
+  margin: 0.2rem;
+}
+
+.cont fieldset {
+  background-color: #fff;
+}
+
+.abt {
+  background-color: cyan;
+  width: 35%;
+  height: 10em;
+  margin: 0.5em 0;
+}
+
+.abt p {
+  padding: 4rem .3rem;
+  color: black;
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.abt:hover {
+  width: 100%;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.abt:hover p {
+  color: black;
+}
+
+strong {
+  font-size: 2rem;
+  color: white;
+  float: right;
 }
 /*# sourceMappingURL=style.css.map */
