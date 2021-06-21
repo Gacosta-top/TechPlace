@@ -258,34 +258,83 @@ nav a:hover {
   transition: 0.5s;
 }
 
+/*
 .cont {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#25b9b9), to(cyan));
-  background-image: linear-gradient(#25b9b9, cyan);
-  margin: 0.5em 0em 0em 0em;
+  background-color: cyan;
+  margin: 0em 0em 0em 0em;
   padding: 0.5em;
-}
-
-.cont form {
+  width: 70%;
   font-weight: bold;
+  form {
+    font-weight: bold;
+    div {
+      margin: 0.2rem;
+    }
+  }
+  fieldset {
+    background-color: white;
+    width: fit-content;
+    font-weight: bold;
+  }
+  &__one {
+    width: 70%;
+    background-color: darkcyan;
+    margin: 1em 0 0 0;
+    padding: 0.5rem;
+    font-weight: bold;
+    fieldset {
+      background-color: white;
+      margin: 0.5rem;
+    }
+  }
+}
+*/
+.cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: cyan solid;
+  border-radius: 0px 30px;
+  margin: 0.5rem 0.5rem 0rem 0.5rem;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 80%;
+  background-color: black;
+  overflow: hidden;
+  min-height: 50px;
+  color: cyan;
+  font-size: 1.5rem;
+  padding: 5px;
 }
 
-.cont form div {
-  margin: 0.2rem;
-}
-
-.cont fieldset {
-  background-color: #fff;
+.cont input,
+.cont textarea,
+.cont select {
+  background-color: lightblue;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  z-index: 1;
+  margin: 0.25em;
+  border-radius: 10px;
 }
 
 .abt {
+  border-radius: 30px 5px;
   background-color: cyan;
   width: 35%;
   height: 10em;
-  margin: 0.5em 0;
+  margin: 0.2em 0;
 }
 
 .abt p {
-  padding: 4rem .3rem;
+  padding: 3rem 0.3rem;
   color: black;
   font-size: 2rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -301,9 +350,42 @@ nav a:hover {
   color: black;
 }
 
-strong {
+.text {
+  background-color: transparent;
+  border: cyan solid 0.5px;
+  border-radius: 30px 80px;
+  padding: 30px;
+  width: 400px;
+  margin: 3%;
   font-size: 2rem;
-  color: white;
+  color: cyan;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text:hover {
+  background-color: cyan;
+  color: black;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.text:hover div a {
+  color: black;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.text div a {
+  color: cyan;
+  text-decoration: none;
+}
+
+.text2 {
+  color: black;
   float: right;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 10px;
 }
 /*# sourceMappingURL=style.css.map */
