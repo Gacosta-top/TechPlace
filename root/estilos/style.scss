@@ -58,6 +58,10 @@ body {
     }
   }
 }
+a {
+  color: white;
+  text-decoration: none;
+}
 /**********CSS PARA BARRA DE NAVEGACIÓN*********************/
 .container {
   width: 100%;
@@ -120,21 +124,22 @@ nav {
   justify-content: space-around;
 }
 .card {
+  border: darkcyan 5px solid;
   position: relative;
   display: inline-flex;
   width: 200px;
   height: 330px;
-  background-color: cyan;
+  background-color: darkcyan;
   border-radius: 1rem;
   margin: 4px;
   overflow: hidden;
   &::before {
     content: "";
     position: absolute;
-    top: -40%;
+    top: -50%;
     width: 100%;
     height: 100%;
-    background-color: darkcyan;
+    background-color: black;
     transform: skewY(345deg);
     transition: 0.5s;
   }
@@ -186,7 +191,7 @@ nav {
     h3 {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 25px;
-      color: black;
+      color: white;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -194,19 +199,18 @@ nav {
     }
     .price {
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 25px;
+      font-size: 35px;
       color: black;
       font-weight: bold;
-      letter-spacing: 1px;
       margin: 0;
     }
     .comprar {
-      color: black;
+      color: white;
       text-decoration: none;
       font-weight: bold;
-      border: black 2px solid;
+      border: white 2px solid;
       border-radius: 2rem;
-      padding: 2px;
+      padding: 4px;
       margin: 10px;
       font-size: 1em;
       &:hover {
@@ -217,37 +221,7 @@ nav {
     }
   }
 }
-/*
-.cont {
-  background-color: cyan;
-  margin: 0em 0em 0em 0em;
-  padding: 0.5em;
-  width: 70%;
-  font-weight: bold;
-  form {
-    font-weight: bold;
-    div {
-      margin: 0.2rem;
-    }
-  }
-  fieldset {
-    background-color: white;
-    width: fit-content;
-    font-weight: bold;
-  }
-  &__one {
-    width: 70%;
-    background-color: darkcyan;
-    margin: 1em 0 0 0;
-    padding: 0.5rem;
-    font-weight: bold;
-    fieldset {
-      background-color: white;
-      margin: 0.5rem;
-    }
-  }
-}
-*/
+
 .cont {
   display: flex;
   flex-direction: column;
@@ -282,6 +256,26 @@ nav {
   width: 35%;
   height: 10em;
   margin: 0.2em 0;
+  /*******************CLASE APARTE PARA EL INDEX***************************/
+  &__ind {
+    border-radius: 30px 5px;
+    width: 50%;
+    height: 10em;
+    margin: 0.2em 0;
+    background-color: darkcyan;
+    p {
+      padding: 3rem 0.3rem;
+      color: white;
+      font-size: 2rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+    &:hover {
+      width: 100%;
+      transition: 2s;
+    }
+  }
+  /***********************************************************************************/
   p {
     padding: 3rem 0.3rem;
     color: black;
@@ -327,4 +321,15 @@ nav {
   font-size: 20px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin: 10px;
+}
+.sect {
+  margin: 6px 6px 6px 6px;
+  padding: 0.5em;
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border: darkcyan 6px solid;
+  border-radius: 50px 0px 50px 0px;
 }
